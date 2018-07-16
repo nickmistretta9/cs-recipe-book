@@ -1,0 +1,13 @@
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\RecipeBook.exe.config
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\RecipeBook.exe
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\RecipeBook.pdb
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.dll
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.xml
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.exe
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.pdb
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.Migrations.CreatedInitialModel.resources
+C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csproj.GenerateResource.Cache
