@@ -11,3 +11,18 @@ C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\Re
 C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.pdb
 C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.Migrations.CreatedInitialModel.resources
 C:\Users\Nick\Desktop\C# Programs\Recipe Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csproj.GenerateResource.Cache
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\RecipeBook.exe.config
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\RecipeBook.exe
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\RecipeBook.pdb
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.dll
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.xml
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.Migrations.CreatedInitialModel.resources
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csproj.GenerateResource.Cache
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csproj.CoreCompileInputs.cache
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.exe
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.pdb

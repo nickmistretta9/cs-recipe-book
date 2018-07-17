@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Xml.Linq;
 
 namespace RecipeBook
@@ -66,26 +69,89 @@ namespace RecipeBook
 
         public void ViewAllRecipes()
         {
+            List<Recipe> recipesToShow = new List<Recipe>();
             Console.Write("Enter the ingredient you would like to search for: ");
             string ingredientToSearch = Console.ReadLine();
             string url = $"https://api.edamam.com/search?q={ingredientToSearch}&app_id={_apiId}&app_key={_apiKey}";
             WebClient client = new WebClient();
             var contents = client.DownloadString(url);
-            var recipes = contents.Split(new string[] { "Recipe" }, StringSplitOptions.None);
-            foreach (var recipe in recipes)
+            var recipes = contents.Split(new string[] { "\"recipe\"" }, StringSplitOptions.None);
+            ViewIndividualRecipe(recipes);
+        }
+
+        private void ViewIndividualRecipe(string[] recipes)
+        {
+            List<Recipe> recipeTitles = ViewRecipeTitles(recipes);
+            int count = 1;
+            Console.WriteLine("Which recipe would you like to view?");
+            foreach(Recipe recipe in recipeTitles)
             {
-                var recipeTitle = recipe.Split(new string[] { "Label" }, StringSplitOptions.None);
-                foreach (var recipeName in recipeTitle)
-                {
-                    Console.WriteLine(recipeName);
-                    Console.WriteLine("--------------------------");
-                }
+                Console.WriteLine("{0}) {1}", count, recipe.Name);
+                count++;
             }
+            int input = int.Parse(Console.ReadLine());
+            ViewRecipeIngredients(recipes, input);
+        }
+
+        private void ViewRecipeIngredients(string[] recipes, int index)
+        {
+            List<Ingredient> ingredientList = new List<Ingredient>();
+            var recipeIngredients = GetBetween(recipes[index], "\"ingredientLines\"", "\"ingredients\"").Trim(new Char[] { ' ', ':', '"', '[', ']' });
+            var ingredients = recipeIngredients.Split(',');
+            foreach (var ingredient in ingredients)
+            {
+                ingredientList.Add(new Ingredient { Name = ingredient.Trim(new Char[] { '"', ']', ' ' }) });
+            }
+            DrawTopLine(ingredientList);
+            foreach(var ingredient in ingredientList)
+                Console.Write("{0} | ", ingredient.Name);
         }
 
         private void ViewFavoriteRecipes()
         {
 
+        }
+
+        private List<Recipe> ViewRecipeTitles(string[] recipes)
+        {
+            List<Recipe> recipesToShow = new List<Recipe>();
+            foreach (var recipe in recipes)
+            {
+                var recipeTitle = GetBetween(recipe, "\"label\"", "\"image\"").Trim(new Char[] { ' ', ':', '"' });
+                if (recipeTitle.Length > 0)
+                {
+                    recipeTitle = recipeTitle.Substring(0, recipeTitle.Length - 3);
+                    recipesToShow.Add(new Recipe { Name = recipeTitle });
+                }
+            }
+            return recipesToShow;
+        }
+
+        private void DrawTopLine(List<Ingredient> ingredients)
+        {
+            string drawLength = "";
+            for(int i = 1; i <= ingredients.Count; i++)
+            {
+                drawLength += $"Ingredient {i} | ";
+            }
+            drawLength = drawLength.Trim();
+            Console.WriteLine(drawLength);
+            Console.WriteLine(new string('-', drawLength.Length));            
+        }
+
+        private static string GetBetween(string strSource, string strStart, string strEnd)
+        {
+            int Start, End;
+            if (strSource.Contains(strStart) && strSource.Contains(strEnd))
+            {
+                Start = strSource.IndexOf(strStart, 0) + strStart.Length;
+                End = strSource.IndexOf(strEnd, Start);
+                return strSource.Substring(Start, End - Start);
+            }
+            else
+            {
+                return "";
+            }
         }
 
         private Person CreateNewUser()
