@@ -10,8 +10,14 @@ namespace RecipeBook
     {
         static void Main(string[] args)
         {
-            RecipeBookInfo recipeBook = new RecipeBookInfo();
-            recipeBook.ViewAllRecipes();
+            try
+            {
+                RecipeBookInfo recipeBook = new RecipeBookInfo();
+                recipeBook.Run();
+            } catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }

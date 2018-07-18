@@ -57,6 +57,18 @@
     <Compile Include="Migrations\201807142126092_CreatedInitialModel.Designer.cs">
       <DependentUpon>201807142126092_CreatedInitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807181359592_AddRequiredPropertiesToColumns.cs" />
+    <Compile Include="Migrations\201807181359592_AddRequiredPropertiesToColumns.Designer.cs">
+      <DependentUpon>201807181359592_AddRequiredPropertiesToColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807181730598_MadePersonIdColumnRequiredInRecipeTable.cs" />
+    <Compile Include="Migrations\201807181730598_MadePersonIdColumnRequiredInRecipeTable.Designer.cs">
+      <DependentUpon>201807181730598_MadePersonIdColumnRequiredInRecipeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807181739144_MakeRecipeIdRequiredInIngredientsTable.cs" />
+    <Compile Include="Migrations\201807181739144_MakeRecipeIdRequiredInIngredientsTable.Designer.cs">
+      <DependentUpon>201807181739144_MakeRecipeIdRequiredInIngredientsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
@@ -72,6 +84,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807142126092_CreatedInitialModel.resx">
       <DependentUpon>201807142126092_CreatedInitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807181359592_AddRequiredPropertiesToColumns.resx">
+      <DependentUpon>201807181359592_AddRequiredPropertiesToColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807181730598_MadePersonIdColumnRequiredInRecipeTable.resx">
+      <DependentUpon>201807181730598_MadePersonIdColumnRequiredInRecipeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807181739144_MakeRecipeIdRequiredInIngredientsTable.resx">
+      <DependentUpon>201807181739144_MakeRecipeIdRequiredInIngredientsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

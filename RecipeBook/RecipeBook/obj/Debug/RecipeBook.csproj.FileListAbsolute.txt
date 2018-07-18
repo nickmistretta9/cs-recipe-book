@@ -26,3 +26,6 @@ C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Deb
 C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.csproj.CoreCompileInputs.cache
 C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.exe
 C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.pdb
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.Migrations.AddRequiredPropertiesToColumns.resources
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.Migrations.MadePersonIdColumnRequiredInRecipeTable.resources
+C:\Users\Nicholas Mistretta\Desktop\C#\Recipe-Book\RecipeBook\RecipeBook\obj\Debug\RecipeBook.Migrations.MakeRecipeIdRequiredInIngredientsTable.resources

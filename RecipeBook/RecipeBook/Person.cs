@@ -13,5 +13,10 @@ namespace RecipeBook
             Name = name;
             FavoriteRecipes = new List<Recipe>();
         }
+
+        public Person()
+        {
+            FavoriteRecipes = new List<Recipe>();
+        }
     }
 }
